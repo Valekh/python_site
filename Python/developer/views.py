@@ -14,17 +14,17 @@ def html_context(name):
 
 def index(requset):
     context = html_context('Главная')
-    return render(requset, 'devoloper/index.html', context)
+    return render(requset, 'developer/index.html', context)
 
 
 def demand(requset):
     context = html_context('Востребованность')
-    return render(requset, 'devoloper/index.html', context)
+    return render(requset, 'developer/index.html', context)
 
 
 def geography(requset):
     context = html_context('География')
-    return render(requset, 'devoloper/index.html', context)
+    return render(requset, 'developer/index.html', context)
 
 
 def recentVacancies(requset):
@@ -32,9 +32,9 @@ def recentVacancies(requset):
     context = {
         'vacancies': vacancies
     }
-    return render(requset, 'devoloper/recent-vacancies.html', context)
+    return render(requset, 'developer/recent-vacancies.html', context)
 
 
 def skills(requset):
     context = html_context('Навыки')
-    return render(requset, 'devoloper/index.html', context)
+    return render(requset, 'developer/index.html', context)
